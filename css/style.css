@@ -16,30 +16,24 @@ body{
 }
 .top{
 	position: absolute;
-	right: 10px;
+	right: 20px;
 	top: 10px;
 }
 .carrinho {
 	float: right;
 	position: relative;
 	width: 428px;
-	height: 41rem ;
+	height: 41.1rem;
+	overflow: hidden;
 	background-color:  #1E1E1E;
 }
 .carrinho .titulo{
-position: absolute;
 width:100%;
 height: 2.5rem;
-left: 0px;
-top: 0px;
-	background: #18181B;;
-	border-bottom: 1px solid #3F3F46;
-	display: flex;
-flex-direction: row;
-align-items: flex-start;
+background: #18181B;;
+border-bottom: 1px solid #3F3F46;
 padding: 1.5rem 2rem;
 gap: 0.5rem;
-isolation: isolate;
 }
 
 .titulo h5{
@@ -51,11 +45,10 @@ line-height: 24px;
 color: #E4E4E7;
 }
 .produtos{
-	padding-top:6rem;
 	padding-left: 15px;
 	padding-right: 15px;
-	width:26,75rem;
-height: 31.625rem;
+	width:93%;
+height: 23.5rem;
 overflow-y: scroll;
 }
 img{
@@ -72,7 +65,7 @@ align-items: left;
 padding: 0px;
 gap: 1.5rem;
 margin-top:20px;
-width: 22.75rem;
+width: 100%;
 height: 6.5rem;
 border-radius: 4px;
 }
@@ -123,21 +116,14 @@ svg{
 	cursor: pointer;
 }
 .btn-final{
-	
 display: flex;
 flex-direction: column;
 align-items: flex-start;
-
-position: absolute;
 width:100%;
-left: 0px;
-bottom: 0px;
 	background: #18181B;;
 	border-top: 1px solid #3F3F46;
 align-items: flex-start;
-padding: 0;
 gap: 0.5rem;
-isolation: isolate;
 }
 
 .btn-comprar{
@@ -177,18 +163,32 @@ height: auto;
 	cursor: pointer;
 	text-align: right;
 }
+
+
+.itens:hover{
+outline: 1px solid white;
+transition: all .4s;
+cursor: pointer;
+}
+
 #compra{
 text-align: center;
+cursor: pointer;
 padding: 15px;
+font-size: 20px;
 width: 100%;
+opacity: 1;
+  transition: 0.3s;
 gap: 8px;
 background: #9333EA;
 box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
 border-radius: 8px;
 }
 
+#compra:hover{
+	opacity: 0.6;
+}
 ::-webkit-scrollbar {
- position: absolute;
 width: 6px;
 }
 
